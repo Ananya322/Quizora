@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Admin - QUIZORA</title>
+</head>
+
+<bod>
+    <nav style="background-color: #f1adba; padding: 20px; margin: 0; height: 100px;">
+        <ul>
+            <li style="float: left;">
+                <a href="index.html">
+                    <img src="/assets/logo.png" width="" height="55" alt="50">
+                </a>
+            </li>
+            <li style="float: right;">
+                <div class="user" height="45" style="padding: 10px;">
+                    <img src="/assets/pic.png" />
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="adminContainer">
+        <div class="adminHeader">
+            <h2>ADMIN PORTAL</h2>
+            <p>Create, Edit and Manage Domain Specific Quizzes and Questions</p>
+        </div>
+        <div class="adminHeader2">
+            <h3>Questionnaire : </h3>
+            <button>+ Add Question </button>
+        </div>
+        <div class="questionContainer">
+            <div class="item">
+                <div class="question">
+                    <p> Hello, what is your name ? </p>
+                    <div class="options">
+                        <p>A. Option A</p>
+                        <p>B. Option B</p>
+                        <p>C. Option C</p>
+                    </div>
+                </div>
+                <div class="trash">
+                    <i class="fa fa-trash"></i>
+                </div>
+            </div>
+        </div>
+        <div class="quizBtn">
+            <button>Save Quiz</button>
+            <button>Post Quiz</button>
+        </div>
+        <div class="modal display-none" id="modal">
+            <div class="modal-main">
+
+                <h4>Add Question</h4>
+                <div class="stmt">
+                    <label>Statement</label>
+                    <textarea placeholder="Enter the question here" id="description"></textarea>
+                </div>
+                <div>
+                    <label>Options : </label>
+                    <div class="add">
+                        <button>+</button>
+                    </div>
+                </div>
+                <input placeholder="Enter your option" id="options" type="text"></input>
+                <div class="modalOptions" id='modalOptions'>
+                </div>
+                <div class="inputBox">
+                    <label>Enter the Correct Option Index : </label>
+                    <input placeholder="Ex. A" id="correctOption" type="text"></input>
+                </div>
+                <div class="post">
+                    <button>Post Question</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </body>
+
+</html>
